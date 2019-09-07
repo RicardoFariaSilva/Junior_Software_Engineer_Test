@@ -16,6 +16,11 @@ Also, I drew my workflow that I pretend to follow:
 * Deploy on Heroku.
 
 Thus, all environment was set in day 1. Beginning with git and this repository at GitHub and after in my PC with NodeJS and Angular and Ruby on Rails.
+
+### Day 2
+Used to think and model all data that's going to be stored. A [class diagram](./Docs/Class_diagram.jpeg) was made in order to guide me on constructing the future API.
+I did some researches in mockup tools and found about [Adobe XD](https://www.adobe.com/br/products/xd.html). It was used to create some mockups about all screens that are going to be developed.
+
 ## How to run
 Instructions of how to run and use the application.
 ```
