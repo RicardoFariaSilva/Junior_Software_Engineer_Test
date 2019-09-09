@@ -24,3 +24,48 @@ Backend/DogWalkerAPI/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
 Backend/DogWalkerAPI/config/master.key
+
+# compiled output
+Frontend/DogWalkerFront/dist
+Frontend/DogWalkerFront/tmp
+Frontend/DogWalkerFront/out-tsc
+# Only exists if Bazel was run
+Frontend/DogWalkerFront/bazel-out
+
+# dependencies
+Frontend/DogWalkerFront/node_modules
+
+# profiling files
+Frontend/DogWalkerFrontchrome-profiler-events*.json
+Frontend/DogWalkerFrontspeed-measure-plugin*.json
+
+# IDEs and editors
+Frontend/DogWalkerFront/.idea
+Frontend/DogWalkerFront/.project
+Frontend/DogWalkerFront/.classpath
+Frontend/DogWalkerFront/.c9/
+Frontend/DogWalkerFront/*.launch
+Frontend/DogWalkerFront/.settings/
+Frontend/DogWalkerFront/*.sublime-workspace
+
+# IDE - VSCode
+Frontend/DogWalkerFront/.vscode/*
+!Frontend/DogWalkerFront/.vscode/settings.json
+!Frontend/DogWalkerFront/.vscode/tasks.json
+!Frontend/DogWalkerFront/.vscode/launch.json
+!Frontend/DogWalkerFront/.vscode/extensions.json
+Frontend/DogWalkerFront/.history/*
+
+# misc
+Frontend/DogWalkerFront/.sass-cache
+Frontend/DogWalkerFront/connect.lock
+Frontend/DogWalkerFront/coverage
+Frontend/DogWalkerFront/libpeerconnection.log
+Frontend/DogWalkerFront/npm-debug.log
+Frontend/DogWalkerFront/yarn-error.log
+Frontend/DogWalkerFront/testem.log
+Frontend/DogWalkerFront/typings
+
+# System Files
+Frontend/DogWalkerFront/.DS_Store
+Frontend/DogWalkerFront/Thumbs.db
