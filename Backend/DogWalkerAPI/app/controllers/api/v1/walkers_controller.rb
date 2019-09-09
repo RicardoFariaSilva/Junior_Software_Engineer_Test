@@ -5,7 +5,7 @@ class Api::V1::WalkersController < Api::V1::ApiController
   #CRUD
   # GET /api/v1/walkers
   def index
-    @walkers = current_user.walkers
+    @walkers = { :walkers => current_user.walkers, :size => current_user.walkers.size }
 
     render json: @walkers
   end

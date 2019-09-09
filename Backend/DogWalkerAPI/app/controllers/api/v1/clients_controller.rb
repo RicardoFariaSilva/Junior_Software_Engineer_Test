@@ -5,7 +5,7 @@ class Api::V1::ClientsController < Api::V1::ApiController
   #CRUD
   # GET /api/v1/clients
   def index
-    @clients = current_user.clients
+    @clients = { :clients => current_user.clients, :size => current_user.clients.size }
 
     render json: @clients
   end

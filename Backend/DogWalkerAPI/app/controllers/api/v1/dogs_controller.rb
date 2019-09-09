@@ -5,7 +5,7 @@ class Api::V1::DogsController < Api::V1::ApiController
   #CRUD
   # GET /api/v1/dogs
   def index
-    @dogs = current_user.dogs
+    @dogs = { :dogs => current_user.dogs, :size => current_user.dogs.size }
 
     render json: @dogs
   end
