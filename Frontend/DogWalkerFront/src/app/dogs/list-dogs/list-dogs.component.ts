@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DogService } from '../dog.service';
+import { Dog } from '../dog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-dogs',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListDogsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private api: DogService,
+    private router: Router
+    ) { }
+
+  dogModel: Dog[];
 
   ngOnInit() {
+    this.api.getDogs()
+    .subscribe( res => {
+      this.dogModel = res;
+    }, err => {
+      console.log(err);
+    }
+  );
   }
 
+  showDog(dog: Dog) {
+    this.router.navigate(['show-dog', dog.id]);
+  }
 }

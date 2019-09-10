@@ -1,1 +1,21 @@
-<p>list-dogs works!</p>
+<div class="ibox-content">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Gênero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dog of dogModel['dogs']">
+                <td><a href="javascript:;" (click)="showDog(dog)">{{dog.name}}</a></td>
+                <td>
+                    <span *ngIf="dog.gender">Macho</span>
+                    <span *ngIf="!dog.gender">Fêmea</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
