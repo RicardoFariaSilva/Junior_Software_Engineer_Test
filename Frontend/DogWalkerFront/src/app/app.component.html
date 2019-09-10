@@ -1,6 +1,35 @@
-<app-create-client></app-create-client>
-<app-create-dog></app-create-dog>
-<app-create-walker></app-create-walker>
-<app-list-clients></app-list-clients>
-<app-list-dogs></app-list-dogs>
-<app-list-walkers></app-list-walkers>
+<div id="wrapper">
+
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <img src="assets\img\doghero-logo.png" alt="">
+        </li>
+        <li class="active">
+          <a routerLink="list-clients"><span class="nav-label">Clientes</span></a>
+          <a routerLink="list-dogs"><span class="nav-label">Cães</span></a>
+          <a routerLink="list-walkers"><span class="nav-label">Passeadores</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="fc-header-title h2">DogWalk</div>
+      </nav>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+      <div class="pull-right"></div>
+      <div>
+        Ricardo Faria da Silva - 2019
+      </div>
+    </div>
+  </div>
+
+</div>
