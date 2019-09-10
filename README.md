@@ -30,6 +30,12 @@ Create and configure controllers for the models were simple. I consulted rails d
 
 I deployed the API in Heroku and it's accessible in this [link](https://floating-lowlands-65453.herokuapp.com/api/v1/). You may manipulate Client, Dog and Walker models by clients.json, dogs.json and walkers.json endpoints. But unless you have a user, you will not be allowed to do nothing. If you want, please contact me ricardo.faria.silva@outlook.com.
 
+### Day 5
+Since my API was online, I focused on start the front-end. I chose Angular because in the past I started a small project using it and remember those concepts seemed nice. I followed a really good tutorial and I recommend to you if you don't know the basics like me ([link](https://www.devmedia.com.br/view/viewaula.php?idcomp=37621)). But most of things I had to check official Angular documentation. Some others tutorial helped me a lot understand how models, components and services work in Angular. 
+
+One of my major difficulties are in html and css. So I had to change what a planned with mockups and follow what the tutorial was suggesting. This is a point where I need to improve.
+
+All listing and showing screens were done, lefting only the pages where dogs, clients and walkers can be created.
 ## How to run
 Instructions of how to run and use the application.
 ```
