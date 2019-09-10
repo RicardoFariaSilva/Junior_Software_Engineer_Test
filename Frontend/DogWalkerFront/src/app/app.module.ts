@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListDogsComponent } from './dogs/list-dogs/list-dogs.component';
@@ -9,6 +8,10 @@ import { ListClientsComponent } from './clients/list-clients/list-clients.compon
 import { CreateClientComponent } from './clients/create-client/create-client.component';
 import { ListWalkersComponent } from './walkers/list-walkers/list-walkers.component';
 import { CreateWalkerComponent } from './walkers/create-walker/create-walker.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShowWalkerComponent } from './walkers/show-walker/show-walker.component';
+import { ShowClientComponent } from './clients/show-client/show-client.component';
+import { ShowDogComponent } from './dogs/show-dog/show-dog.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { CreateWalkerComponent } from './walkers/create-walker/create-walker.com
     ListClientsComponent,
     CreateClientComponent,
     ListWalkersComponent,
-    CreateWalkerComponent
+    CreateWalkerComponent,
+    ShowWalkerComponent,
+    ShowClientComponent,
+    ShowDogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
