@@ -1,0 +1,25 @@
+<div class="ibox-content">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Gênero</th>
+                    <th>Raça</th>
+                    <th>Peso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{dogModel.name}}</td>
+                    <td>
+                        <span *ngIf="dogModel.gender">Macho</span>
+                        <span *ngIf="!dogModel.gender">Fêmea</span>
+                    </td>
+                    <td>{{dogModel.race}}</td>
+                    <td>{{dogModel.weight}}</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
