@@ -1,1 +1,18 @@
-<p>list-clients works!</p>
+<div class="ibox-content">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of clientModel['clients']">
+                <td><a href="javascript:;" (click)="showClient(client)">{{client.name}}</a></td>
+                <td>{{client.location}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
