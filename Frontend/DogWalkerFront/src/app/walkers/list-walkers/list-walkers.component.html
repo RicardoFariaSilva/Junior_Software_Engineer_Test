@@ -1,1 +1,18 @@
-<p>list-walkers works!</p>
+<div class="ibox-content">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let walker of walkerModel['walkers']">
+                    <td><a href="javascript:;" (click)="showWalker(walker)">{{walker.name}}</a></td>
+                    <td>{{walker.location}}</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>

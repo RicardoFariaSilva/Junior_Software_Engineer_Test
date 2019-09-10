@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { WalkerService } from '../walker.service';
+import { Walker } from '../walker';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-walkers',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListWalkersComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private api: WalkerService,
+    private router: Router
+    ) { }
+
+  walkerModel: Walker[];
 
   ngOnInit() {
+    this.api.getWalkers()
+    .subscribe( res => {
+      this.walkerModel = res;
+    }, err => {
+      console.log(err);
+    }
+  );
   }
 
+  showWalker(walker: Walker) {
+    this.router.navigate(['show-walker', walker.id]);
+  }
 }
