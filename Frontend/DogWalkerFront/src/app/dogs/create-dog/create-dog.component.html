@@ -1,1 +1,31 @@
-<p>create-dog works!</p>
+<div class="ibox-content">
+    <form method="get" (submit)="createDog()" class="form-horizontal">
+        <div class="form-group"><label class="col-sm-2 control-label">Nome</label>
+            <div class="col-sm-10">
+              <input id="nomeID" name="nomeName" [(ngModel)]="newDogName" type="text" class="form-control" maxlength="255">
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group"><label class="col-sm-2 control-label">Raça</label>
+            <div class="col-sm-10">
+              <input id="emailId" name="emailName" [(ngModel)]="newDogRace" type="text" class="form-control" maxlength="255">
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group"><label class="col-sm-2 control-label">Gênero</label>
+            <div class="col-sm-10">
+              <p>
+                <input type="radio" value="false" name="gender" [(ngModel)]="newDogGender" > Fêmea
+                <input type="radio" value="true" name="gender" [(ngModel)]="newDogGender" > Macho
+             </p>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group"><label class="col-sm-2 control-label">Peso</label>
+            <div class="col-sm-10">
+              <input id="locationID" name="locationName" [(ngModel)]="newDogWeight" type="text" class="form-control" maxlength="10">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Criar</button>     
+    </form>
+  </div>
