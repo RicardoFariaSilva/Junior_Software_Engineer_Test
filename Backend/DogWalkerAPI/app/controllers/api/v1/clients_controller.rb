@@ -50,7 +50,7 @@ class Api::V1::ClientsController < Api::V1::ApiController
 
   # Only allow a trusted parameter "white list" through.
   def client_params
-    params.require(:client).permit(:id, :name, :email, :phone_number, :location, :description)
+    params.permit(:id, :name, :email, :phone_number, :location, :description)
   end
 
   def require_authorization!

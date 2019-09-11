@@ -50,7 +50,7 @@ class Api::V1::WalkersController < Api::V1::ApiController
 
   # Only allow a trusted parameter "white list" through.
   def walker_params
-    params.require(:walker).permit(:id, :name, :email, :phone_number, :location, :description)
+    params.permit(:id, :name, :email, :phone_number, :location, :description)
   end
 
   def require_authorization!

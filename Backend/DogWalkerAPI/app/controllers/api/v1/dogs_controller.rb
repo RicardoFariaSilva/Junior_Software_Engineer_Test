@@ -50,7 +50,7 @@ class Api::V1::DogsController < Api::V1::ApiController
 
   # Only allow a trusted parameter "white list" through.
   def dog_params
-    params.require(:dog).permit(:id, :name, :race, :gender, :weight, :description)
+    params.permit(:id, :name, :race, :gender, :weight, :description)
   end
 
   def require_authorization!
