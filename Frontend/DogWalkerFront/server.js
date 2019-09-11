@@ -1,12 +1,12 @@
-import express, { static } from 'express';
-import { join } from 'path';
-const nomeApp = process.env.npm_package_name;
+const express = require('express');
+const path = require('path');
+const nomeApp = 'DogWalkerFront';
 const app = express();
  
-app.use(static(`$/dist/$`));
- 
+app.use(express.static('./dist/' + nomeApp));
+
 app.get('/*', (_req, res) => {
-res.sendFile(join(`$/dist/$/index.html`));
+res.sendFile(path.join(__dirname, '/dist/' + nomeApp + '/index.html'));
 });
  
 app.listen(process.env.PORT || 8080);
