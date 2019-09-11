@@ -30,4 +30,8 @@ export class ListWalkersComponent implements OnInit {
   showWalker(walker: Walker) {
     this.router.navigate(['show-walker', walker.id]);
   }
+
+  createWalker() {
+    this.router.navigate(['create-walker']);
+  }
 }

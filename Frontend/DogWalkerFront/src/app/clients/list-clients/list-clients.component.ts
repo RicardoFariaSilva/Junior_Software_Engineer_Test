@@ -32,4 +32,8 @@ export class ListClientsComponent implements OnInit {
     this.router.navigate(['show-client', client.id]);
   }
 
+  createClient() {
+    this.router.navigate(['create-client']);
+  }
+
 }

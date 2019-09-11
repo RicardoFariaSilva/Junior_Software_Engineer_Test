@@ -30,4 +30,8 @@ export class ListDogsComponent implements OnInit {
   showDog(dog: Dog) {
     this.router.navigate(['show-dog', dog.id]);
   }
+
+  createDog() {
+    this.router.navigate(['create-dog']);
+  }
 }
