@@ -23,4 +23,8 @@ export class DogService {
     const newUrl = url + '/'  + id;
     return this.http.get<Dog>(newUrl, {headers: {'X-User-Email': email, 'X-User-Token': token}});
   }
+
+  postNewDog(dog: FormData): Observable<any> {
+    return this.http.post(url, dog, {headers: {'X-User-Email': email, 'X-User-Token': token}});
+  }
 }

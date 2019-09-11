@@ -23,4 +23,8 @@ export class WalkerService {
     const newUrl = url + '/'  + id;
     return this.http.get<Walker>(newUrl, {headers: {'X-User-Email': email, 'X-User-Token': token}});
   }
+
+  postNewClient(walker: FormData): Observable<any> {
+    return this.http.post(url, walker, {headers: {'X-User-Email': email, 'X-User-Token': token}});
+  }
 }
