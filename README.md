@@ -36,6 +36,11 @@ Since my API was online, I focused on start the front-end. I chose Angular becau
 One of my major difficulties are in html and css. So I had to change what a planned with mockups and follow what the tutorial was suggesting. This is a point where I need to improve.
 
 All listing and showing screens were done, lefting only the pages where dogs, clients and walkers can be created.
+
+### Day 6
+The POST method were implemented in all services and all create screens were done. 
+
+I coded less than since I started on this day, but It was the hardest. I faced some problems communicating with the API because I didn't know how to pass the data properly. In the beginning I was trying to send it like raw JSON, but I only was getting 402 response. So I changed it to form-data and got it the way. I spent some time in this and it was a huge experience in Angular, since I had to search a lot of tutorials and documentations. To help solve this problem it was need to remove require('model') in all controllers in the backend. I pretend to deploy the frontend app in Heroku like I did with backend.
 ## How to run
 Instructions of how to run and use the application.
 ```
