@@ -41,8 +41,22 @@ All listing and showing screens were done, lefting only the pages where dogs, cl
 The POST method were implemented in all services and all create screens were done. 
 
 I coded less than since I started on this day, but It was the hardest. I faced some problems communicating with the API because I didn't know how to pass the data properly. In the beginning I was trying to send it like raw JSON, but I only was getting 402 response. So I changed it to form-data and got it the way. I spent some time in this and it was a huge experience in Angular, since I had to search a lot of tutorials and documentations. To help solve this problem it was need to remove require('model') in all controllers in the backend. I pretend to deploy the frontend app in Heroku like I did with backend.
+
+### Day 7
+Frontend deployed on Heroku. I had some problems doing it, but when I realized that my dist folder was being ignored, all gonne much easier. 
+
 ## How to run
 Instructions of how to run and use the application.
 ```
-TODO
+[BACKEND]
+All my backend it's in RESTful API format at https://peaceful-gorge-94677.herokuapp.com/
+To auth, use these in header:
+"X-User-Email", "online@teste.com"
+"X-User-Token", "YeuHBHsJyDsGVFoUD9Ep"
+
+There are 3 available links: api/v1/clients, api/v1/dogs and api/v1/walkers
+For more details open backend controllers.
+
+[FRONTEND]
+You may access the web app at https://peaceful-gorge-94677.herokuapp.com/
 ```
